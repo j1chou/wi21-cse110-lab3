@@ -43,8 +43,23 @@ body {
 
   }
 
+  section > details { /*child combinator*/
+    display: inline;
+    color:blueviolet
+  }
 
+  summary { /* element selector*/
+    display: block;
+  }
 
+  pre + code{ /*sibling selector*/
+    color: green;
+  }
+
+  div h3 { /*descendent selctor*/
+    color: yellow;
+  }
+  /*pseudo class and selectors*/
   #active:hover{
     background-color:rgb(251, 255, 0);
   }
