@@ -17,6 +17,7 @@ body {
   }
   
   .intro {
+    position: relative;
     border-style: solid;
     border-width: medium;
     border-color: hsl(181, 100%, 50%);
@@ -24,6 +25,11 @@ body {
   }
 
   #interests{
+    position: sticky;
+  
+    min-width: 300px;
+    max-width: 600px;
+
     border-style: dotted;
     border-width: medium;
     border-color: hsl(303, 100%, 50%);
@@ -34,6 +40,7 @@ body {
     color: brown;
     text-decoration: underline;
     text-decoration-color: aquamarine;
+
   }
 
 
