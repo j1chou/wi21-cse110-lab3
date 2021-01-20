@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Josh Chou's homepage but in HTML</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Josh Chou">
+    <link rel="stylesheet" href="style.css">  <!-- I don't have a style.css lol-->
+</head>
+
+<body>
+<header>
+    <h1>Welcome to my homepage, but in HTML!</h1>
+</header>
+
+<main> 
+    
+<nav class="menu">
+    <h2>Nav Bar:</h2>
+    <ol>
+        <li class="menu"><a href="https://j1chou.github.io/">[nav]Josh's Homepage</a></li>
+        <li class="menu"><a href="https://j1chou.github.io/markdown">Markdown demo</a></li>
+        <li class="menu">HTML demo (you are here)</li>
+    </ol>
+</nav>
+
+<hr>
+<h3>Facts about myself: </h3>
+<ul>
+    <li>I'm currently a third year undergraduate student 
+        <ul>
+            <li>From Warren College</li>
+        </ul>
+    </li>
+    <li>I'm studying Computer Science</li>
+    <li>I'm from Northern California</li>
+</ul>
+<h3>Interests in computation</h3>
+<ol>
+    <li>Cloud based solutions</li>
+    <li>Backend systems</li>
+    <li>Mobile development</li>
+    <li>Comutational Thinking education</li>
+    <li>UI/UX design</li>
+</ol>
+
+<hr>
+<figure>
+    <img src="https://puu.sh/H6lZU/339364b924.png"
+         alt="A place of great suffering">
+    <figcaption>This is where I wish I was right now</figcaption>
+</figure>
+
+<hr>
+
+<div>
+    <h3>Here is an XKCD that I like</h3>
+    <picture>
+        <source srcset="https://puu.sh/H6m93/8108332fb3.png"
+                media="(min-width: 800px)">
+        <img src="https://puu.sh/H6lZU/339364b924.png" alt="" />
+    </picture>
+</div>
+
+
+<div> 
+    <h3>Webreg on speed dial</h3> 
+    <iframe 
+    src="https://students.ucsd.edu/academics/enroll/index.html" title="webReg UCSD">
+    </iframe>
+</div>
+
+<h2>Relevant information ends here</h2>
+<hr>
+<h2>Poem break</h2> 
+
+Knox in box.<br>
+<pre>Fox  in   socks.</pre> 
+<code>Knox on fox in socks in box.</code>
+
+<section>
+    <details>
+        <summary>Wand of Shadow</summary>
+        A wand of <strong>demonic enigmas</strong>, cloaked in darkness and <em>crackling</em> with dark enchantments.
+    </details>
+</section>
+
+<details>
+    <summary>A superlative bow of <b>sunsteel and diamondwire,</b> created by a <i>secretive</i> race of <span class ="aliens">star-dwelling entities</span></summary>
+    Bow of Mystical Energy
+</details>
+<hr>
+
+<div>
+<h4>Here's my thoughts on the name of fruits and their color</h5>
+    <table>
+        <caption>Fruit name and Color</caption>
+        <colgroup>
+            <col>
+            <col span="1" class="Apples">
+            <col span="1" class="Oranges">
+        </colgroup>
+        <tr>
+            <td> </td>
+            <th scope="col" class="Apples">Apple</th>
+            <th scope="col" class="Oranges">Orange</th>
+        </tr>
+        <tr>
+            <th scope="row">Same?</th>
+            <td>No</td>
+            <td>Yes</td>
+        </tr>
+    </table>
+</div>
+
+<hr>
+
+<h3>proof that I can use the video tag</h3>
+
+<video controls width="250">
+
+    <source src="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4">
+    Sorry, your browser doesn't support embedded videos.
+</video>
+<h3> Not necessarily accomapnied by this song</h3>
+<audio
+controls
+src="https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3">
+    Your browser does not support the
+    <code>audio</code> element.
+</audio>
+<hr>
+<div>
+<label for="class-select">Choose a class:</label>
+    <select id="class-select">
+        <option value="">--Please choose an option--</option>
+        <optgroup label = "CSE classes">
+            <option value="CSE 100">CSE 100</option>
+            <option value="CSE 105">CSE 105</option>
+            <option value="CSE 110">CSE 110</option>
+        </optgroup>
+    </select>
+</div>
+
+<div>
+    <p>This is a canvas that's drawing a circle</p>
+    <canvas id="sampleCanvas" width="200" height="200"></canvas>
+    <script>
+        var c = document.getElementById("sampleCanvas");
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+        ctx.stroke();
+    </script>
+</div>
+<div>
+    <p>this a svg tag with a circle</p>
+    <svg width="100" height="100">
+        <circle cx="40" cy="50" r="40" stroke="red" stroke-width="2" fill="blue" />
+      </svg>
+</div>
+<hr>
+<form action="makeform" method="get" class="form-example">
+    <fieldset>
+    <legend>Something for form enthusiasts</legend>
+    <div class="form-example">
+      <label for="username">Enter your username: </label>
+      <input type="text" name="username" id="username" required>
+    </div>
+    <div class="form-example">
+      <label for="email">Enter your email: </label>
+      <input type="email" name="email" id="email" required>
+    </div>
+    <div class="form-example">
+        <label for="number">Enter your favorite number: </label>
+        <input type="number" name="number" id="number" required>
+      </div>
+    <div class="form-example">
+        <label for="password">Enter a password: </label>
+        <input type="password" name="password" id="password" required>
+    </div>
+    <div class="form-example">
+        <label for="url">Enter your favorite website: </label>
+        <input type="url" name="url" id="url" required>
+    </div>
+    <div class="form-example">
+        <label for="tel">Enter your phone number: </label>
+        <input type="tel" name="tel" id="tel" required>
+    </div>
+    <div class="form-example">
+        <label for="checkbox">Do you like checking boxes? </label>
+        <input type="checkbox" name="checkbox" id="checkbox" required>
+    </div>
+    <div>
+        <label for="date">Pick a day in 2020:</label>
+        <input type="date" id="date" name="start"
+               min="2020-01-01" max="2020-12-31">
+    </div>
+    <div>
+        <label for="month">Pick a month:</label>
+        <input type="month" id="month" name="start"
+               min="2020-01" max="2020-12">
+    </div>
+    <textarea id="story" name="story"
+          rows="5" cols="33">
+Tell us about your favorite color
+    </textarea>
+    <div> <label for="Milk-Shake-choice">Choose a flavor:</label>
+        <input list="Milk-Shake-flavors" id="Milk-Shake-choice" name="Milk-Shake-choice" />
+        <datalist id="Milk-Shake-flavors">
+            <option value="Chocolate">
+            <option value="Strawberry">
+            <option value="Vanilla">
+        </datalist> 
+    </div>
+
+    <div class="form-example">
+      <input type="submit" value="Sign up">
+    </div> 
+    </fieldset>
+</form>
+
+<div>
+    <button onclick="showContent()">Press for dopamine</button>
+
+    <template>
+    <h2>White Bag</h2>
+    <img src="https://puu.sh/H6ncQ/85771e20ee.png" >
+    </template>
+
+    <script>
+    function showContent() {
+    var temp = document.getElementsByTagName("template")[0];
+    var clon = temp.content.cloneNode(true);
+    document.body.appendChild(clon);
+    }
+    </script>
+</div>
+
+<footer>
+    <p>© powered by stress and expectations</p>
+</footer>
+
+</main>
+</body>
+</html>
