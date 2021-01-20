@@ -22,3 +22,16 @@ body {
     border-color: hsl(181, 100%, 50%);
     border-radius: 5px;
   }
+
+  #interests{
+    border-style: dotted;
+    border-width: medium;
+    border-color: hsl(303, 100%, 50%);
+    border-radius: 5px;
+
+    
+    text-align: center;
+    color: brown;
+    text-decoration: underline;
+    text-decoration-color: aquamarine;
+  }
