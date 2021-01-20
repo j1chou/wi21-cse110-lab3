@@ -1,1 +1,15 @@
+body {
+    background-color: lightblue; /* this sets the background to lightblue */
+  }
+  
+  h3 {
+    color: rgb(255, 0, 242);
+    margin-left: 20px;
+  }
 
+  .intro {
+    border-style: solid;
+    border-width: medium;
+    border-color: hsl(181, 100%, 50%);
+    border-radius: 5px;
+  }
