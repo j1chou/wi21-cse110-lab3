@@ -12,7 +12,7 @@ body {
       src: url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap')
   }
 
-  .flex-container {
+  .flex-container { /*flex box*/
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -27,7 +27,7 @@ body {
     font-size: 30px;
   }
 
-  .grid-container {
+  .grid-container { /*grid*/
     display: grid;
 
     grid-template-columns: auto auto auto;
@@ -38,7 +38,7 @@ body {
     padding: 100px;
   }
   
-  .grid-item {
+  .grid-item { /*Class selector*/
     background-color: rgba(58, 255, 255, 0.8);
     padding: 20px;
     text-align: center;
@@ -52,7 +52,7 @@ body {
       background-color: rgb(230, 255, 138);
     }
   }
-  .intro { /*Class selector*/
+  div.intro { /*Element Class selector*/
     position: relative;
     border-style: solid;
     border-width: medium;
@@ -63,16 +63,12 @@ body {
 
   #interests{ /* ID selector*/
     position: sticky;
-  
     min-width: 20vh;
     max-width: 40%;
-
     border-style: dotted;
     border-width: medium;
     border-color: hsl(303, 100%, 50%);
     border-radius: 5px;
-
-    
     text-align: center;
     color: brown;
     text-decoration: underline;
@@ -109,6 +105,19 @@ body {
     margin: top right bottom left 10px;
   }
 
+  a[target=your_heart]{ /*attribute selector*/
+    background-color: pink;
+  }
+
+  h3 ~ ul { /* adjacent sibling combinator */
+    background: #e1ccf1;
+  }
+
+  ul, li{ /* selector list */
+    color:  #111053
+  }
+
+  
   div h3 { /*descendent selctor*/
     color: yellow;
   }
