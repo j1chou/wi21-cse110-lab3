@@ -12,11 +12,11 @@ body {
       src: url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap')
   }
 
-  *{
+  *{ /*universal selector*/
      font-family: 'Roboto Condensed', sans-serif; 
   }
   
-  .intro {
+  .intro { /*Class selector*/
     position: relative;
     border-style: solid;
     border-width: medium;
@@ -25,7 +25,7 @@ body {
     min-width: 20vmin;
   }
 
-  #interests{
+  #interests{ /* ID selector*/
     position: sticky;
   
     min-width: 20vh;
@@ -47,19 +47,36 @@ body {
   section > details { /*child combinator*/
     display: inline;
     color:blueviolet;
+    width: 520px;
+    height: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 200px;
+    margin-right: 20px;
   }
 
   summary { /* element selector*/
     display: block;
+    width: 320px;
+    padding: top right bottom left 10px;
+    margin: auto;
   }
 
   pre + code{ /*sibling selector*/
     color: green;
+    width: 320px;
+    padding: 10px;
+    margin: top right bottom left 10px;
   }
 
   div h3 { /*descendent selctor*/
     color: yellow;
   }
+  
   /*pseudo class and selectors*/
   #active:hover{
     background-color:rgb(251, 255, 0);
