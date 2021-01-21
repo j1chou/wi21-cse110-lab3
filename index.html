@@ -13,6 +13,7 @@ h2 {color:#756aa8}
 <body>
 <header>
     <h1 style="color:blue;">Welcome to my homepage, but in HTML with CSS!</h1>
+    <h5> with a splash of the 90's </h5>
 </header>
 
 <main> 
@@ -48,32 +49,34 @@ h2 {color:#756aa8}
 </ol>
 </div>
 <hr>
-<figure>
-    <img src="https://puu.sh/H6lZU/339364b924.png"
-         alt="A place of great suffering">
-    <figcaption>This is where I wish I was right now</figcaption>
-</figure>
 
-<hr>
+<div class="grid-container">
+    <figure class="grid-item">
+        <img src="https://puu.sh/H6lZU/339364b924.png"
+            alt="A place of great suffering">
+        <figcaption>This is where I wish I was right now</figcaption>
+    </figure>
 
-<div>
-    <h3>Here is an XKCD that I like</h3>
-    <picture>
-        <source srcset="https://puu.sh/H6m93/8108332fb3.png"
-                media="(min-width: 800px)">
-        <img src="https://puu.sh/H6lZU/339364b924.png" alt="" />
-    </picture>
+    <div class="grid-item">
+        <h3>Here is an XKCD that I like</h3>
+        <picture>
+            <source srcset="https://puu.sh/H6m93/8108332fb3.png"
+                    media="(min-width: 800px)">
+            <img src="https://puu.sh/H6lZU/339364b924.png" alt="" />
+        </picture>
+    </div>
+
+    <div class="grid-item"> 
+        <h3>Webreg on speed dial</h3> 
+        <iframe 
+        src="https://students.ucsd.edu/academics/enroll/index.html" title="webReg UCSD">
+        </iframe>
+    </div>
+
 </div>
-
-
-<div> 
-    <h3>Webreg on speed dial</h3> 
-    <iframe 
-    src="https://students.ucsd.edu/academics/enroll/index.html" title="webReg UCSD">
-    </iframe>
-</div>
-
 <h2>Relevant information ends here</h2>
+
+
 <hr>
 <h2>Poem break</h2> 
 
@@ -163,7 +166,9 @@ src="https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3">
         </svg>
     </div>
 </div>
+
 <hr>
+
 <form action="makeform" method="get" class="form-example">
     <fieldset>
     <legend>Something for form enthusiasts</legend>
