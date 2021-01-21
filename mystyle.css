@@ -12,6 +12,21 @@ body {
       src: url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap')
   }
 
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: rgb(178, 237, 241);
+  }
+  
+  .flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+  }
+  
   *{ /*universal selector*/
      font-family: 'Roboto Condensed', sans-serif; 
   }
